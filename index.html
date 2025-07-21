@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reglamento Opción de Grado - Universidad del Sinú</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 50%, #991b1b 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .timeline-line {
+            background: linear-gradient(to bottom, #dc2626, #f87171);
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="gradient-bg text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <!-- Universidad del Sinú Logo - Replace with actual logo file -->
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center p-2">
+                        <img src="./img/Unisinu_Logo.png" alt="Universidad del Sinú Logo" class="w-full h-full object-contain rounded-full">
+                        <!-- Fallback if logo not found -->
+                        <div class="w-full h-full bg-red-100 rounded-full flex items-center justify-center text-red-600 font-bold text-sm" style="display: none;">
+                            LOGO
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="text-3xl font-bold">Universidad del Sinú</h1>
+                        <p class="text-red-100">Elías Bechara Zainúm</p>
+                    </div>
+                </div>
+                <div class="text-right">
+                    <div class="bg-white/20 rounded-lg px-4 py-2">
+                        <span class="text-sm font-medium">Reglamento</span>
+                        <div class="text-lg font-bold">Opción de Grado</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+        <!-- Overview Section -->
+        <section class="mb-16">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">📋 Reglamento de Opción de Grado</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Normativa que regula las diferentes modalidades para obtener el título profesional en la Universidad del Sinú</p>
+            </div>
+
+            <!-- Key Stats -->
+            <div class="grid md:grid-cols-4 gap-6 mb-12">
+                <div class="bg-white rounded-xl p-6 text-center shadow-lg card-hover">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">📚</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-red-600 mb-2">6</h3>
+                    <p class="text-gray-600">Modalidades de Grado</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 text-center shadow-lg card-hover">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">⏱️</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-green-600 mb-2">2</h3>
+                    <p class="text-gray-600">Semestres Máximo</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 text-center shadow-lg card-hover">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">👥</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-purple-600 mb-2">3</h3>
+                    <p class="text-gray-600">Jurados Evaluadores</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 text-center shadow-lg card-hover">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">📊</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-orange-600 mb-2">3.5</h3>
+                    <p class="text-gray-600">Promedio Mínimo</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modalidades Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">🎯 Modalidades de Opción de Grado</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Trabajo de Investigación -->
+                <div class="bg-white rounded-xl p-6 shadow-lg card-hover border-l-4 border-red-500">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mr-4">
+                            <span class="text-xl">🔬</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Trabajo de Investigación</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Desarrollo de un proyecto de investigación original que contribuya al conocimiento en el área de estudio.</p>
+                    <div class="bg-red-50 rounded-lg p-3">
+                        <p class="text-sm text-red-700 font-medium">✓ Sustentación oral obligatoria</p>
+                    </div>
+                </div>
+
+                <!-- Monografía -->
+                <div class="bg-white rounded-xl p-6 shadow-lg card-hover border-l-4 border-green-500">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
+                            <span class="text-xl">📝</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Monografía</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Estudio profundo y sistemático sobre un tema específico del área profesional.</p>
+                    <div class="bg-green-50 rounded-lg p-3">
+                        <p class="text-sm text-green-700 font-medium">✓ Análisis teórico-práctico</p>
+                    </div>
+                </div>
+
+                <!-- Práctica Empresarial -->
+                <div class="bg-white rounded-xl p-6 shadow-lg card-hover border-l-4 border-purple-500">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
+                            <span class="text-xl">🏢</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Práctica Empresarial</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Experiencia práctica en una empresa u organización del sector productivo.</p>
+                    <div class="bg-purple-50 rounded-lg p-3">
+                        <p class="text-sm text-purple-700 font-medium">✓ Mínimo 480 horas</p>
+                    </div>
+                </div>
+
+                <!-- Emprendimiento -->
+                <div class="bg-white rounded-xl p-6 shadow-lg card-hover border-l-4 border-orange-500">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mr-4">
+                            <span class="text-xl">🚀</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Emprendimiento</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Creación de un plan de negocio viable y sostenible en el tiempo.</p>
+                    <div class="bg-orange-50 rounded-lg p-3">
+                        <p class="text-sm text-orange-700 font-medium">✓ Plan de negocio completo</p>
+                    </div>
+                </div>
+
+                <!-- Diplomado -->
+                <div class="bg-white rounded-xl p-6 shadow-lg card-hover border-l-4 border-red-500">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mr-4">
+                            <span class="text-xl">🎓</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Diplomado</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Programa de educación continuada especializada en un área específica.</p>
+                    <div class="bg-red-50 rounded-lg p-3">
+                        <p class="text-sm text-red-700 font-medium">✓ 120 horas académicas</p>
+                    </div>
+                </div>
+
+                <!-- Curso de Profundización -->
+                <div class="bg-white rounded-xl p-6 shadow-lg card-hover border-l-4 border-indigo-500">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mr-4">
+                            <span class="text-xl">📖</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Curso de Profundización</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Profundización en conocimientos específicos del área profesional.</p>
+                    <div class="bg-indigo-50 rounded-lg p-3">
+                        <p class="text-sm text-indigo-700 font-medium">✓ Evaluación integral</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proceso Timeline -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">⏳ Proceso de Opción de Grado</h2>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="relative">
+                    <div class="absolute left-8 top-0 bottom-0 w-1 timeline-line rounded-full"></div>
+                    
+                    <!-- Step 1 -->
+                    <div class="relative flex items-center mb-8">
+                        <div class="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center text-white font-bold text-xl pulse-animation">1</div>
+                        <div class="ml-8 bg-white rounded-lg p-6 shadow-lg flex-1">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Inscripción</h3>
+                            <p class="text-gray-600">El estudiante se inscribe en la modalidad elegida ante la Coordinación Académica del programa.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="relative flex items-center mb-8">
+                        <div class="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center text-white font-bold text-xl">2</div>
+                        <div class="ml-8 bg-white rounded-lg p-6 shadow-lg flex-1">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Asignación de Director</h3>
+                            <p class="text-gray-600">Se asigna un director de trabajo de grado según la modalidad y área de conocimiento.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="relative flex items-center mb-8">
+                        <div class="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center text-white font-bold text-xl">3</div>
+                        <div class="ml-8 bg-white rounded-lg p-6 shadow-lg flex-1">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Desarrollo</h3>
+                            <p class="text-gray-600">Ejecución del trabajo bajo la supervisión del director asignado.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="relative flex items-center mb-8">
+                        <div class="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center text-white font-bold text-xl">4</div>
+                        <div class="ml-8 bg-white rounded-lg p-6 shadow-lg flex-1">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Evaluación</h3>
+                            <p class="text-gray-600">Evaluación por parte del jurado calificador designado por el programa.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="relative flex items-center">
+                        <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center text-white font-bold text-xl">✓</div>
+                        <div class="ml-8 bg-white rounded-lg p-6 shadow-lg flex-1">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Aprobación</h3>
+                            <p class="text-gray-600">Una vez aprobado, el estudiante puede proceder con los trámites de grado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Requisitos -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">📋 Requisitos Generales</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold text-red-600 mb-6 flex items-center">
+                        <span class="mr-3">✅</span>
+                        Requisitos Académicos
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-3 mt-1">•</span>
+                            <span class="text-gray-700">Haber cursado y aprobado el 100% de los créditos del plan de estudios</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-3 mt-1">•</span>
+                            <span class="text-gray-700">Promedio académico acumulado mínimo de 3.5</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-3 mt-1">•</span>
+                            <span class="text-gray-700">Estar a paz y salvo por todo concepto con la Universidad</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-3 mt-1">•</span>
+                            <span class="text-gray-700">Cumplir con los requisitos específicos de cada modalidad</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold text-purple-600 mb-6 flex items-center">
+                        <span class="mr-3">📄</span>
+                        Documentos Requeridos
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <span class="text-purple-500 mr-3 mt-1">•</span>
+                            <span class="text-gray-700">Solicitud formal de inscripción</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-purple-500 mr-3 mt-1">•</span>
+                            <span class="text-gray-700">Propuesta de trabajo (según modalidad)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-purple-500 mr-3 mt-1">•</span>
+                            <span class="text-gray-700">Certificado de notas actualizado</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-purple-500 mr-3 mt-1">•</span>
+                            <span class="text-gray-700">Paz y salvo financiero y académico</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Info -->
+        <section class="bg-gradient-to-r from-red-600 to-red-800 rounded-2xl p-8 text-white text-center">
+            <h2 class="text-3xl font-bold mb-4">📞 Información de Contacto</h2>
+            <p class="text-xl mb-6">Para más información sobre el proceso de opción de grado</p>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white/20 rounded-lg p-4">
+                    <h3 class="font-bold mb-2">📧 Correo Electrónico</h3>
+                    <p>claudiaserpa@unisinu.edu.co</p>
+                </div>
+                <div class="bg-white/20 rounded-lg p-4">
+                    <h3 class="font-bold mb-2">📱 Teléfono</h3>
+                    <p>(+57) xxxxxx</p>
+                </div>
+                <div class="bg-white/20 rounded-lg p-4">
+                    <h3 class="font-bold mb-2">🌐 Sitio Web</h3>
+                    <p>www.unisinu.edu.co</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-16">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex items-center justify-center mb-4">
+                <!-- Universidad del Sinú Logo - Replace with actual logo file -->
+                <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center mr-4 p-1">
+                    <img src="./img/Logo-Claudia.png" alt="Claudia Logo" class="w-full h-full object-contain rounded-full">
+                    <!-- Fallback if logo not found -->
+                    <div class="w-full h-full bg-red-100 rounded-full flex items-center justify-center text-red-600 font-bold text-xs" style="display: none;">
+                        LOGO
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold">Universidad del Sinú</h3>
+                    <p class="text-gray-400">Elías Bechara Zainúm</p>
+                </div>
+            </div>
+            <p class="text-gray-400">© 2025 Claudia Serpa Imbett, PhD - Ingeniería Eléctrica. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'962739196176f786',t:'MTc1MzA2NDQ2Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
